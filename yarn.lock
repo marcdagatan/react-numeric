@@ -348,9 +348,9 @@ atob@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.0.3.tgz#19c7a760473774468f20b2d2d03372ad7d4cbf5d"
 
-"autonumeric@https://github.com/marcdagatan/autoNumeric#next":
+"autonumeric@https://github.com/marcdagatan/autonumeric#quickfix":
   version "4.5.10"
-  resolved "https://github.com/marcdagatan/autoNumeric#ff07277e1ea1a3fddf84251c8f039edd667ea1a0"
+  resolved "https://github.com/marcdagatan/autonumeric#26b68f88fcc7ddb0aa67f517b048c861dc646832"
 
 autoprefixer@^6.3.1:
   version "6.7.7"

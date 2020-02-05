@@ -24,7 +24,7 @@
   "author": "Mehmet Kamil Morcay <mehmetmorcay@gmail.com> (https://github.com/mkg0)",
   "license": "MIT",
   "dependencies": {
-    "autonumeric": "https://github.com/marcdagatan/autoNumeric#next"
+    "autonumeric": "https://github.com/marcdagatan/autonumeric#quickfix"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
