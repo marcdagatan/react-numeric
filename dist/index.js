@@ -106,7 +106,7 @@ var ReactNumeric = function (_React$Component) {
       var _this2 = this;
 
       var inputProps = {};
-      ["id", "className", "style", "disabled", "type", "name", "tabIndex", "unselectable", "size", "autoFocus", "placeholder"].forEach(function (prop) {
+      ["id", "className", "style", "disabled", "type", "name", "tabIndex", "unselectable", "size", "autoFocus", "placeholder", "dataTestId"].forEach(function (prop) {
         return inputProps[prop] = _this2.props[prop];
       });
       return _react2.default.createElement("input", _extends({
@@ -212,14 +212,16 @@ ReactNumeric.propTypes = {
   valuesToStrings: _propTypes2.default.object,
   wheelOn: _propTypes2.default.oneOf(["focus", "hover"]),
   wheelStep: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
-  preDefined: _propTypes2.default.object
+  preDefined: _propTypes2.default.object,
+  dataTestId: _propTypes2.default.string
 };
 
 ReactNumeric.defaultProps = {
   type: "text",
   outputFormat: "number",
   preDefined: {},
-  className: "asdf"
+  className: "",
+  dataTestId: null
 };
 
 var predefinedOptions = exports.predefinedOptions = _autonumeric2.default.getPredefinedOptions();

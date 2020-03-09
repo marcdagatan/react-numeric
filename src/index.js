@@ -74,6 +74,7 @@ export default class ReactNumeric extends React.Component {
       "size",
       "autoFocus",
       "placeholder",
+      "dataTestId",
     ].forEach(prop => (inputProps[prop] = this.props[prop]));
     return (
       <input
@@ -162,13 +163,15 @@ ReactNumeric.propTypes = {
   wheelOn: PropTypes.oneOf(["focus", "hover"]),
   wheelStep: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   preDefined: PropTypes.object,
+  dataTestId: PropTypes.string,
 };
 
 ReactNumeric.defaultProps = {
   type: "text",
   outputFormat: "number",
   preDefined: {},
-  className: "asdf",
+  className: "",
+  dataTestId: null,
 };
 
 export const predefinedOptions = AutoNumeric.getPredefinedOptions();
